@@ -28,7 +28,7 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="<a href="https://t.me/mlm_movies_update">ദയവായി ഞങ്ങളുടെ UPDATE CHANNEL ഇല് ജോയിൻ ചെയ്യുക.എന്നാൽ മാത്രേ എനിക്ക് സിനിമ അയക്കാൻ സാധിക്കൂ..\n ജോയിൻ ചെയ്തശേഷം താഴെ കാണുന്ന 🔂 TRY AGAIN ബട്ടൺ ക്ലിക്ക് ചെയ്യുക. \n Please join our UPDATE CHANNEL.Only then can I send the movie..\n After joining, click on the 🔂 TRY AGAIN button below.</a>",
+                    text="ദയവായി ഞങ്ങളുടെ <a href="https://t.me/mlm_movies_update">UPDATE CHANNEL<a/> ഇല് ജോയിൻ ചെയ്യുക.എന്നാൽ മാത്രേ എനിക്ക് സിനിമ അയക്കാൻ സാധിക്കൂ..\n ജോയിൻ ചെയ്തശേഷം താഴെ കാണുന്ന 🔂 TRY AGAIN ബട്ടൺ ക്ലിക്ക് ചെയ്യുക. \n Please join our <a href="https://t.me/mlm_movies_update">UPDATE CHANNEL</a>.Only then can I send the movie..\n After joining, click on the 🔂 TRY AGAIN button below.",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
