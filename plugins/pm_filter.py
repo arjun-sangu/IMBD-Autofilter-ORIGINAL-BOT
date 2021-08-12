@@ -164,7 +164,7 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-</b>", reply_markup=InlineKeyboardMarkup(buttons))
+reply_markup=InlineKeyboardMarkup(buttons))
         else:
             await message.reply_text(f"<b>Move {search} ‌‌‌‌‎ ­  ­  ­  ­  ­    </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
