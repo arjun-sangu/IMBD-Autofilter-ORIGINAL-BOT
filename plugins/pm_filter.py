@@ -75,10 +75,10 @@ async def filter(client, message):
             }
         else:
             buttons = btn
-            buttons.append[(
-                [InlineKeyboardButton(text="🎯 Pages 1/1 🎯",callback_data="pages")]
+            buttons.append(
+                 InlineKeyboardButton(text="🎯 Pages 1/1 🎯",callback_data="pages")
              ],[
-                [InlineKeyboardButton(text="❗ HOW TO GET FILES ❗", url= "https://telegra.ph/HOW-TO-GET-FILES-07-19")]
+                 InlineKeyboardButton(text="❗ HOW TO GET FILES ❗", url= "https://telegra.ph/HOW-TO-GET-FILES-07-19")
             )]
             poster=None
             if API_KEY:
