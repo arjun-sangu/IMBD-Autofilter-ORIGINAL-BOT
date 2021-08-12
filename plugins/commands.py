@@ -67,10 +67,7 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
-                    ],
-                    [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('💢 NEW MOVIES 💢, url="https://t.me/MLM_ROKES")
                     ]
                     ]
                 await bot.send_cached_media(
@@ -102,11 +99,11 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Bot Updates", url="https://t.me/Mo_Tech_YT")
+                        InlineKeyboardButton("💢 MOVIE REQUEST GROUP 💢", url="https://t.me/NEW_MLM_HD_MOVES"),
                     ],
                     [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("💢 NEW MOVIES", url="https://t.me/MLM_ROKES"),
+                        InlineKeyboardButton("NEW UPDATES 💢", url="https://t.me/mlm_movies_update")
                     ]
                 ]
             )
