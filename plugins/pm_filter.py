@@ -82,7 +82,7 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n<a href="https://t.me/mlm_movies_update">ഈ എഴുത്തിൽ ക്ലിക്ക് ചെയ്ത് കിട്ടുന്ന ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
                 await message.reply_text(f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n<a href="https://t.me/mlm_movies_update">ഈ എഴുത്തിൽ ക്ലിക്ക് ചെയ്ത് കിട്ടുന്ന ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
@@ -101,7 +101,7 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n<a href="https://t.me/mlm_movies_update">ഈ എഴുത്തിൽ ക്ലിക്ക് ചെയ്ത് കിട്ടുന്ന ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
             await message.reply_text(f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n<a href="https://t.me/mlm_movies_update">ഈ എഴുത്തിൽ ക്ലിക്ക് ചെയ്ത് കിട്ടുന്ന ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
 
@@ -146,7 +146,7 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n<a href="https://t.me/mlm_movies_update">ഈ എഴുത്തിൽ ക്ലിക്ക് ചെയ്ത് കിട്ടുന്ന ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
                 await message.reply_text(f"<b>Name {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n<a href="https://t.me/mlm_movies_update">ഈ എഴുത്തിൽ ക്ലിക്ക് ചെയ്ത് കിട്ടുന്ന ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
@@ -164,7 +164,7 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>Movie {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>Movie {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n<a href="https://t.me/mlm_movies_update">ഈ എഴുത്തിൽ ക്ലിക്ക് ചെയ്ത് കിട്ടുന്ന ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
             await message.reply_text(f"<b>Move {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n<a href="https://t.me/mlm_movies_update">ഈ എഴുത്തിൽ ക്ലിക്ക് ചെയ്ത് കിട്ടുന്ന ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</a></b>", reply_markup=InlineKeyboardMarkup(buttons))
 
