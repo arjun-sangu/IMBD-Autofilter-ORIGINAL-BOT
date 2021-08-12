@@ -76,7 +76,7 @@ async def filter(client, message):
         else:
             buttons = btn
             buttons.append(
-                [InlineKeyboardButton(text="◀️ Pages 1/1 ▶️",callback_data="pages")]
+                [InlineKeyboardButton(text="🎯 Pages 1/1 🎯",callback_data="pages")]
             )
             poster=None
             if API_KEY:
