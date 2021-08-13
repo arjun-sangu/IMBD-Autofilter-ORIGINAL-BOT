@@ -82,10 +82,10 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬  YOUR REQEST : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n  🤔HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനെലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക></b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬  YOUR REQEST : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n FOUND {(len_results)} FILES\n🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനെലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക></b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬  YOUR REQEST : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬  YOUR REQEST : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n FOUND {(len_results)} FILES\n🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -101,9 +101,9 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬  YOUR REQEST : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനെലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>🎬  YOUR REQEST : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n FOUND {(len_results)} FILES\n🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനെലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>🎬  YOUR REQEST : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­     \n🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🎬  YOUR REQEST : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­     \n FOUND {(len_results)} FILES\n🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
