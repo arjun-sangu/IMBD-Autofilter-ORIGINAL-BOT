@@ -27,7 +27,6 @@ DATABASE_URI = environ['DATABASE_URI']
 DATABASE_NAME = environ['DATABASE_NAME']
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # new
-        """
         Get the total filters, total connected
         chats and total active chats of a chat
         """
