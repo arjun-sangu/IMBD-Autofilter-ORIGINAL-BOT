@@ -28,8 +28,8 @@ DATABASE_NAME = environ['DATABASE_NAME']
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # Messages
 default_start_msg = """
-**Hi, I'm Media Search Bot or ypu can call me as Auto-Filter Bot**
-Here you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search.
+**Hi ഞാൻ ADV AUTO FILTER WITH IMDB BOT ആണ്**
+എന്നെ @NEW_MLM_HD_MOVES ഗ്രൂപ്പിൽ മാത്രേ ഉപയോഗിക്കാൻ പറ്റൂ.സിനിമ വേണമെങ്കിൽ ഗ്രൂപ്പിൽ പോയി ചോദിക്ക് അല്ലാതെ എന്നെ ചൊറിയാൻ വരേണ്ട..😒
 """
 START_MSG = environ.get('START_MSG', default_start_msg)
 
