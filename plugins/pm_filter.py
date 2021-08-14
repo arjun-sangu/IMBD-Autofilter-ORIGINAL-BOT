@@ -146,9 +146,9 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬  YOUR REQEST</b> : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n<b>🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬  YOUR REQEST</b> : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  \n FOUND {(len_results)}\n<b>🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
-                await message.reply_text(f"<b>🎬  YOUR REQEST</b> : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­   \n<b>🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬  YOUR REQEST</b> : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­   \n FOUND {(len_results)}\n<b>🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -164,9 +164,9 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬  YOUR REQES</b>T : {search} ‌‎ ­  ­  ­  ­  ­  \n<b>🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>🎬  YOUR REQES</b>T : {search} ‌‎ ­  ­  ­  ­  ­  \n FOUND {(len_results)}\n<b>🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>🎬  YOUR REQEST</b> : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­    \n<b>🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🎬  YOUR REQEST</b> : {search} ‌‌‌‌‎ ­  ­  ­  ­  ­    \n FOUND {(len_results)}\n<b>🤔  HOW TO GET FILES👉 /file \n\n@MLM_ROKES ഈ ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം താഴെ ഉള്ള ബട്ടൺ ക്ലിക്ക് ചെയ്യുക</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
