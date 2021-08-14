@@ -12,7 +12,6 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-total_filter = await self.tf_count(group_id)
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ['ADMINS'].split()]
@@ -27,6 +26,33 @@ TUTORIAL = "@mlm_movies_update"
 DATABASE_URI = environ['DATABASE_URI']
 DATABASE_NAME = environ['DATABASE_NAME']
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+# new
+    async def status(self, group_id: int):
+        """
+        Get the total filters, total connected
+        chats and total active chats of a chat
+        """
+        group_id = int(group_id)
+
+        total_filter = await self.tf_count(group_id)
+        chats = await self.find_chat(group_id)
+        chats = chats.get("chat_ids")
+        total_chats = len(chats) if chats is not None else 0
+        
+        achats = await self.find_active(group_id)
+        if achats not in (None, False):
+            achats = achats.get("chats")
+            if achats == None:
+                achats = []
+        else:
+            achats = []
+        total_achats = len(achats)
+        
+        return total_filter, total_chats, total_achats
+
+
+    async def find_group_id(self, channel_id: int):
+        """
 
 # Messages
 default_start_msg = """
