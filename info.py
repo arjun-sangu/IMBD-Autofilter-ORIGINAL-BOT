@@ -27,8 +27,6 @@ DATABASE_URI = environ['DATABASE_URI']
 DATABASE_NAME = environ['DATABASE_NAME']
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # new
-        group_id = int(group_id)
-
         total_filter = await self.tf_count(group_id)
         chats = await self.find_chat(group_id)
         chats = chats.get("chat_ids")
